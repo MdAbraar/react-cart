@@ -84,7 +84,7 @@ const Cart = () => {
         setProducts(products);
         togglePriceFetched(true);
       });
-  }, [cart]);
+  }, [cart, priceFetched]);
 
   return products.length ? (
     <div className="container mx-auto lg:w-1/2 w-full pb-24">
